@@ -7,7 +7,7 @@ html {
 }
 
 .icon {
-  color: #BCD2DA;
+    color: #BCD2DA;
 }
 
 .card {
@@ -16,7 +16,6 @@ html {
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
-    
 }
 
 .card__description {
@@ -28,7 +27,8 @@ html {
 }
 
 .card__descriptionIcon {
-  font-size: 32px; margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .card__descriptionText {
@@ -56,44 +56,44 @@ html {
     overflow: hidden;
     width: 710px;
     margin: auto;
-  }
-  
-    .cardGroup__card {
-      flex-basis: 33%;
-      flex-grow: 1;
-      border: none;
-      border-radius: 0;
-    }
-  
-    .cardGroup__card {
-      border-left: 1px solid #D7DBDD;
-    }
-  
-    .cardGroup__cardDescription {
-      flex-basis:auto;
-      flex-grow: 1;
-  
-    }
-
-    
-@media screen and (max-width:320px) {
-  .cardGroup {
-    display:block;
-    border: 1px solid #CAD0D2;
-    border-radius: 4px;
-    overflow: hidden;
-    width: 100px;
-    margin: auto;
-  }
 }
 
-@media screen and (max-width:710px){
-  .cardGroup {
-    display:block;
-    border: 1px solid #CAD0D2;
-    border-radius: 4px;
-    overflow: hidden;
-    width: 150px;
-    margin: auto;
-  }
+.cardGroup__card {
+    flex-basis: 33%;
+    flex-grow: 1;
+    border: none;
+    border-radius: 0;
+}
+
+.cardGroup__card {
+    border-left: 1px solid #D7DBDD;
+}
+
+.cardGroup__cardDescription {
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+@media screen and (max-width:320px) {
+    .cardGroup {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #CAD0D2;
+        border-radius: 4px;
+        overflow: hidden;
+        width: 320px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .cardGroup {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #CAD0D2;
+        border-radius: 4px;
+        overflow: hidden;
+        width: 320px;
+        margin: auto;
+    }
 }
